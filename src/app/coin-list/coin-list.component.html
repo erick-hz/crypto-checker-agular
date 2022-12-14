@@ -28,7 +28,7 @@
 <div class="container">
     <mat-form-field>
         <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="uu" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="btc" #input>
     </mat-form-field>
 
     <div class="mat-elevation-z8">
@@ -62,7 +62,7 @@
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            <tr (click)="gotoDetails(row)" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
             <!-- Row shown when there is no matching data. -->
             <tr class="mat-row" *matNoDataRow>
