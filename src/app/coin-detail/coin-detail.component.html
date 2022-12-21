@@ -17,12 +17,11 @@
     <div class="col-md-8">
       <canvas style="width: 300px;" baseChart [data]="lineChartData" [options]="lineChartOptions"
         [type]="lineChartType"></canvas>
-
       <div class="d-flex justify-content-around">
-        <button class="btn btn-custom">24 hours</button>
-        <button class="btn btn-custom">30 days</button>
-        <button class="btn btn-custom">90 days</button>
-        <button class="btn btn-custom">1 year</button>
+        <button (click)="getGraphData(1)" class="btn btn-custom">24 hours</button>
+        <button (click)="getGraphData(30)" class="btn btn-custom">30 days</button>
+        <button (click)="getGraphData(90)" class="btn btn-custom">90 days</button>
+        <button (click)="getGraphData(365)" class="btn btn-custom">1 year</button>
       </div>
     </div>
   </div>
