@@ -34,11 +34,11 @@
   margin: 10px;
   line-height: 50px;
   .title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
   }
   .value {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
   }
 }
@@ -62,4 +62,8 @@
 
 * {
   color: #fff;
+}
+
+.d-flex {
+  margin: 50px 0;
 }
